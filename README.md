@@ -23,12 +23,12 @@ The WebSocket communication is implemented using Socket.IO to ensure real-time i
 
 ### 🌐Server-Side (Socket.IO)
 The server manages real-time game communications using Socket.IO with the following key features:
-#### 1. Room Management
-#### 2. Game State Management
+ 1. Room Management
+ 2. Game State Management
 
 ### 💻Client-Side Implementation
-#### 1.Socket Connection
-#### 2.Game States
+  1.Socket Connection
+  2.Game States
 
 ### 🤖Other Technical Implementation
 
@@ -79,6 +79,24 @@ node server.js
 cd client
 npm run dev
 ```
+## Usage Guide
+
+1. **Login**: Enter your name to start the game.
+2. **Waiting Room**: Wait for other players to join.
+3. **Typing Challenge**: Once the game starts, type the displayed sentence as quickly and accurately as possible.
+4. **Chat**: Use the chat box to communicate with other players during the game.
+5. **Leaderboard**: After the game ends, view the leaderboard to see your ranking.
+
+## API Documentation
+
+This project uses Socket.IO for real-time communication. Below are the key events:
+
+- **`request_to_play`**: Sent by a player to join a game.
+- **`score_update`**: Sent to update the player's score in real-time.
+- **`game_over`**: Emitted when a game ends to announce the winner.
+- **`chat_message`**: Used for sending chat messages between players.
+
+Happy Typing! 🎉
 
 
 
